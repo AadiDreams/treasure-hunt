@@ -4,6 +4,6 @@ function check(){
         window.location.href="./two.html";
     }
     else{
-        window.alert("incorrect code")
+        window.location.href="./wrong.html";
     }
 }
