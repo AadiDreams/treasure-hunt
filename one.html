@@ -4,66 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treasure Hunt</title>
-    <style>
-        *{
-            margin:0px;
-        }
-        body{
-            background-image: url(./asssets/bg.jpg);
-            background-size: 100% 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height:100dvh;
-            font-family: 'Courier New', Courier, monospace;
-        }
-        .box{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            width:300px;
-            height:100px;
-            background-color: #fff;
-            border-radius: 20px;
-            padding: 20px;
-        }
-        input[type="number"]{
-            border-radius: 10px;
-            border: 2px solid #000;
-            padding: 5px;
-            height: 20px;
-        }
-        input[type="button"]{
-            height:30px;
-            background-color: #fff;
-            border-radius: 10px;
-            width: 50px;
-            margin-left: 10px;
-            border: 2px solid #000;
-        }
-        input[type="button"]:hover{
-            background-color: #000;
-            color: #fff;
-        }
-    </style>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="box">
         <h1>Enter the code:</h1>
         <input type="number" id="code">
-        <input type="button" value="GO" onclick="check()">
+        <input type="button" value="GO">
     </div>
-    <script>
-        function check(){
-            const value=document.getElementById("code").value;
-            if(value==754893){
-                window.location.href="./two.html";
-            }
-            else{
-                window.alert("incorrect code")
-            }
-        }
-    </script>
 </body>
 </html>
